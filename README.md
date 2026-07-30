@@ -1,27 +1,139 @@
 # MiniRISC
 
-A custom 8-bit processor designed from scratch, taken through a complete RTL-to-GDSII ASIC flow.
+An educational yet industry-oriented 8-bit RISC processor built completely from scratch and taken through a complete RTL-to-GDSII ASIC design flow using open-source EDA tools.
 
 ## Overview
-MiniRISC is an exploration of computer architecture and physical design. The goal of this project is to document the entire lifecycle of a chip: from ISA definition and architectural trade-offs to RTL implementation, verification, synthesis, and physical layout using open-source EDA tools (OpenLane, OpenSTA, Magic).
 
-This project treats the processor not as a software script, but as a physical piece of hardware, prioritizing documented architectural trade-offs over immediate coding.
+MiniRISC is a project to understand how real processors are designed, verified, synthesized, and implemented as silicon.
 
-## Current Status: Phase 1 (Architecture & Specification) - COMPLETE
-* Defined the Instruction Set Architecture (ISA).
-* Completed Architecture Decision Records (ADRs) for all major datapath and control components.
-* Established the complete Datapath Architecture.
+Rather than focusing only on writing RTL, this repository documents the complete hardware development process—from architectural decisions and ISA design to functional verification, synthesis, timing analysis, physical implementation, and final GDSII generation.
 
-## Project Roadmap
-- [x] **Phase 1:** Architecture & ISA Specification
-- [ ] **Phase 2:** RTL Implementation (Verilog)
-- [ ] **Phase 3:** Functional Verification (Testbenches & Assertions)
-- [ ] **Phase 4:** Logic Synthesis & STA
-- [ ] **Phase 5:** Physical Design (Floorplanning, Placement, CTS, Routing)
-- [ ] **Phase 6:** Sign-off (DRC, LVS)
+The project follows engineering practices used in the semiconductor industry, emphasizing architecture, modular RTL design, verification, and reproducible design flows.
+
+---
+
+## Features
+
+- Custom 8-bit RISC Instruction Set Architecture
+- 16-bit fixed-width instruction format
+- Single-cycle processor implementation
+- Modular datapath and control architecture
+- Parameterized SystemVerilog RTL
+- Self-checking testbenches
+- Memory initialization using HEX files
+- GTKWave waveform debugging
+- Open-source RTL-to-GDSII flow
+
+---
+
+## Processor Architecture
+
+- Program Counter (PC)
+- Instruction Memory
+- Register File (8 × 8-bit Registers)
+- Immediate Generator
+- ALU Operand Multiplexer
+- Arithmetic Logic Unit (ALU)
+- Data Memory
+- Write Back Multiplexer
+- Control Unit
+
+---
+
+## RTL Status
+
+| Module | Status |
+|---------|--------|
+| Program Counter | ✅ Complete |
+| Instruction Memory | ✅ Complete |
+| Register File | ✅ Complete |
+| Immediate Generator | ✅ Complete |
+| ALU Operand MUX | ✅ Complete |
+| ALU | ✅ Complete |
+| Data Memory | ✅ Complete |
+| Write Back MUX | ✅ Complete |
+| Control Unit | ✅ Complete |
+| Top CPU Integration | ✅ Complete |
+| Top-Level Simulation | ✅ In Progress |
+
+---
+
+## Verification
+
+- Module-level self-checking testbenches
+- Top-level CPU verification
+- GTKWave waveform analysis
+- Memory initialization through HEX files
+- Functional debugging using Icarus Verilog
+
+---
+
+## RTL-to-GDSII Flow
+
+The processor is intended to be implemented using a complete open-source ASIC flow.
+
+- RTL Simulation (Icarus Verilog)
+- Waveform Debugging (GTKWave)
+- Logic Synthesis
+- Static Timing Analysis
+- Floorplanning
+- Placement
+- Clock Tree Synthesis
+- Routing
+- DRC/LVS
+- GDSII Generation
+
+---
 
 ## Repository Structure
-* `/docs/` - Architecture Decision Records (ADRs) and ISA specifications.
-* `/rtl/` - Verilog design files (Pending Phase 2).
-* `/tb/` - Testbenches and verification environments (Pending Phase 3).
-* `/scripts/` - EDA tool constraints and configuration scripts (Pending Phase 4).
+
+```
+MiniRISC/
+│
+├── docs/               # Architecture documents and ISA
+├── pkg/                # Global parameters and definitions
+├── program/            # Instruction and data memory HEX files
+├── rtl/                # SystemVerilog RTL modules
+├── tb/                 # Testbenches
+├── simulations/        # Simulation outputs
+├── scripts/            # Build and automation scripts
+└── README.md
+```
+
+---
+
+## Development Roadmap
+
+- [x] Architecture Specification
+- [x] ISA Design
+- [x] Datapath Design
+- [x] Control Unit Design
+- [x] RTL Implementation
+- [x] Module Verification
+- [ ] Complete Top-Level Functional Verification
+- [ ] SystemVerilog Assertions
+- [ ] Logic Synthesis
+- [ ] Static Timing Analysis
+- [ ] Physical Design
+- [ ] DRC / LVS
+- [ ] GDSII Generation
+
+---
+
+## Tools
+
+- SystemVerilog
+- Icarus Verilog
+- GTKWave
+- OpenLane
+- OpenROAD
+- OpenSTA
+- Magic VLSI
+- Netgen
+- SKY130 Open PDK
+
+---
+
+## Long-Term Goal
+
+Build an educational yet industry-quality processor that demonstrates the complete ASIC design flow—from architecture to manufacturable GDSII—using entirely open-source tools while following professional hardware engineering practices.
