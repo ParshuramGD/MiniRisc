@@ -1,0 +1,123 @@
+--- sky130A_make.log head ---
+Starting sky130A PDK staging on Thu Jul 30 05:12:44 UTC 2026
+Installing in target (staging) directory /home/hp/open_pdks/sky130/sky130A
+Magic version 8.2 (or better) available on the system.
+Diagnostic:  installing to ngspice.
+    installing from spinit to /home/hp/open_pdks/sky130/sky130A/libs.tech/ngspice/spinit
+   Filtering file /home/hp/open_pdks/sky130/sky130A/libs.tech/ngspice/spinit with rename_models.py
+Installing in target (staging) directory /home/hp/open_pdks/sky130/sky130A
+Magic version 8.2 (or better) available on the system.
+Searching for magic startup script.
+Found magic startup script at /home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.magicrc
+Install option: gds
+Collecting files from ./custom/sky130_fd_sc_hvl/gds/*.gds
+Files to install:
+   ./custom/sky130_fd_sc_hvl/gds/sky130_ef_sc_hvl__fill_8.gds
+   Install:./custom/sky130_fd_sc_hvl/gds/sky130_ef_sc_hvl__fill_8.gds to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hvl/gds/sky130_ef_sc_hvl__fill_8.gds
+Diagnostic:  Sorting files with /home/hp/open_pdks/common/sort_pdkfiles.py
+Completed installation of vendor files.
+Adding Tcl script options from file custom/scripts/gds_import_sc.tcl
+Migrating GDS files to layout.
+Getting GDS file list from /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hvl/gds.
+Creating magic generation script to generate magic database files.
+No source for abstract views:  Abstract views not made.
+Running magic to create magic database files.
+Installing in target (staging) directory /home/hp/open_pdks/sky130/sky130A
+Magic version 8.2 (or better) available on the system.
+Searching for magic startup script.
+Found magic startup script at /home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.magicrc
+Install option: mag
+Collecting files from ../sources/sky130_ml_xx_hd/../sky130_ml_xx_hd/mag/*.mag
+Files to install:
+   ../sources/sky130_ml_xx_hd/../sky130_ml_xx_hd/mag/font_01F600.mag
+   ../sources/sky130_ml_xx_hd/../sky130_ml_xx_hd/mag/font_2A.mag
+   ../sources/sky130_ml_xx_hd/../sky130_ml_xx_hd/mag/font_2B.mag
+   ../sources/sky130_ml_xx_hd/../sky130_ml_xx_hd/mag/font_2C.mag
+   .
+   .
+   .
+   ../sources/sky130_ml_xx_hd/../sky130_ml_xx_hd/mag/font_76.mag
+   ../sources/sky130_ml_xx_hd/../sky130_ml_xx_hd/mag/font_77.mag
+   ../sources/sky130_ml_xx_hd/../sky130_ml_xx_hd/mag/font_78.mag
+   ../sources/sky130_ml_xx_hd/../sky130_ml_xx_hd/mag/font_79.mag
+   ../sources/sky130_ml_xx_hd/../sky130_ml_xx_hd/mag/font_A9.mag
+(98 files total)
+   Install:../sources/sky130_ml_xx_hd/../sky130_ml_xx_hd/mag/font_01F600.mag to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_ml_xx_hd/mag/font_01F600.mag
+   Filtering file /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_ml_xx_hd/mag/font_01F600.mag with text2m5.py
+Installing in target (staging) directory /home/hp/open_pdks/sky130/sky130A
+Magic version 8.2 (or better) available on the system.
+Searching for magic startup script.
+Found magic startup script at /home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.magicrc
+Install option: techlef
+Collecting files from ../sources/sky130_fd_sc_hs/tech/*.tlef
+Files to install:
+   ../sources/sky130_fd_sc_hs/tech/sky130_fd_sc_hs__max.tlef
+   ../sources/sky130_fd_sc_hs/tech/sky130_fd_sc_hs__min.tlef
+   ../sources/sky130_fd_sc_hs/tech/sky130_fd_sc_hs__nom.tlef
+   ../sources/sky130_fd_sc_hs/tech/sky130_fd_sc_hs__rram__max.tlef
+   ../sources/sky130_fd_sc_hs/tech/sky130_fd_sc_hs__rram__min.tlef
+   ../sources/sky130_fd_sc_hs/tech/sky130_fd_sc_hs__rram__nom.tlef
+   Install:../sources/sky130_fd_sc_hs/tech/sky130_fd_sc_hs__max.tlef to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/techlef/sky130_fd_sc_hs__max.tlef
+   Install:../sources/sky130_fd_sc_hs/tech/sky130_fd_sc_hs__min.tlef to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/techlef/sky130_fd_sc_hs__min.tlef
+   Install:../sources/sky130_fd_sc_hs/tech/sky130_fd_sc_hs__nom.tlef to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/techlef/sky130_fd_sc_hs__nom.tlef
+   Install:../sources/sky130_fd_sc_hs/tech/sky130_fd_sc_hs__rram__max.tlef to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/techlef/sky130_fd_sc_hs__rram__max.tlef
+   Install:../sources/sky130_fd_sc_hs/tech/sky130_fd_sc_hs__rram__min.tlef to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/techlef/sky130_fd_sc_hs__rram__min.tlef
+   Install:../sources/sky130_fd_sc_hs/tech/sky130_fd_sc_hs__rram__nom.tlef to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/techlef/sky130_fd_sc_hs__rram__nom.tlef
+Diagnostic:  Sorting files with /home/hp/open_pdks/common/sort_pdkfiles.py
+Install option: spice
+Sorting files with script ../common/sort_pdkfiles.py
+Collecting files from ../sources/sky130_fd_sc_hs/cells/*/*.spice
+Files to install:
+   ../sources/sky130_fd_sc_hs/cells/a2bb2o/sky130_fd_sc_hs__a2bb2o_1.spice
+   ../sources/sky130_fd_sc_hs/cells/a2bb2o/sky130_fd_sc_hs__a2bb2o_2.spice
+   ../sources/sky130_fd_sc_hs/cells/a2bb2o/sky130_fd_sc_hs__a2bb2o_4.spice
+   ../sources/sky130_fd_sc_hs/cells/a2bb2oi/sky130_fd_sc_hs__a2bb2oi_1.spice
+   .
+   .
+   .
+   ../sources/sky130_fd_sc_hs/cells/xor2/sky130_fd_sc_hs__xor2_1.spice
+   ../sources/sky130_fd_sc_hs/cells/xor2/sky130_fd_sc_hs__xor2_2.spice
+   ../sources/sky130_fd_sc_hs/cells/xor2/sky130_fd_sc_hs__xor2_4.spice
+   ../sources/sky130_fd_sc_hs/cells/xor3/sky130_fd_sc_hs__xor3_1.spice
+   ../sources/sky130_fd_sc_hs/cells/xor3/sky130_fd_sc_hs__xor3_2.spice
+(390 files total)
+   Install:../sources/sky130_fd_sc_hs/cells/a2bb2o/sky130_fd_sc_hs__a2bb2o_1.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a2bb2o_1.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a2bb2o/sky130_fd_sc_hs__a2bb2o_2.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a2bb2o_2.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a2bb2o/sky130_fd_sc_hs__a2bb2o_4.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a2bb2o_4.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a2bb2oi/sky130_fd_sc_hs__a2bb2oi_1.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a2bb2oi_1.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a2bb2oi/sky130_fd_sc_hs__a2bb2oi_2.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a2bb2oi_2.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a2bb2oi/sky130_fd_sc_hs__a2bb2oi_4.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a2bb2oi_4.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a21bo/sky130_fd_sc_hs__a21bo_1.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a21bo_1.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a21bo/sky130_fd_sc_hs__a21bo_2.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a21bo_2.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a21bo/sky130_fd_sc_hs__a21bo_4.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a21bo_4.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a21boi/sky130_fd_sc_hs__a21boi_1.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a21boi_1.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a21boi/sky130_fd_sc_hs__a21boi_2.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a21boi_2.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a21boi/sky130_fd_sc_hs__a21boi_4.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a21boi_4.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a21o/sky130_fd_sc_hs__a21o_1.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a21o_1.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a21o/sky130_fd_sc_hs__a21o_2.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a21o_2.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a21o/sky130_fd_sc_hs__a21o_4.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a21o_4.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a21oi/sky130_fd_sc_hs__a21oi_1.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a21oi_1.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a21oi/sky130_fd_sc_hs__a21oi_2.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a21oi_2.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a21oi/sky130_fd_sc_hs__a21oi_4.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a21oi_4.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a22o/sky130_fd_sc_hs__a22o_1.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a22o_1.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a22o/sky130_fd_sc_hs__a22o_2.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a22o_2.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a22o/sky130_fd_sc_hs__a22o_4.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a22o_4.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a22oi/sky130_fd_sc_hs__a22oi_1.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a22oi_1.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a22oi/sky130_fd_sc_hs__a22oi_2.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a22oi_2.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a22oi/sky130_fd_sc_hs__a22oi_4.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a22oi_4.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a31o/sky130_fd_sc_hs__a31o_1.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a31o_1.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a31o/sky130_fd_sc_hs__a31o_2.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a31o_2.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a31o/sky130_fd_sc_hs__a31o_4.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a31o_4.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a31oi/sky130_fd_sc_hs__a31oi_1.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a31oi_1.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a31oi/sky130_fd_sc_hs__a31oi_2.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a31oi_2.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a31oi/sky130_fd_sc_hs__a31oi_4.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a31oi_4.spice
+   Install:../sources/sky130_fd_sc_hs/cells/a32o/sky130_fd_sc_hs__a32o_1.spice to /home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs__a32o_1.spice    installing from corners to /home/hp/open_pdks/sky130/sky130A/libs.tech/ngspice/corners
+   copy tree from ../sources/sky130_fd_pr/models/corners/ to /home/hp/open_pdks/sky130/sky130A/libs.tech/ngspice/corners/.
+   Filtering file /home/hp/open_pdks/sky130/sky130A/libs.tech/ngspice/corners/ff.spice with rename_models.py
+Installing in target (staging) directory /home/hp/open_pdks/sky130/sky130A
+Magic version 8.2 (or better) available on the system.
+Searching for magic startup script.
+Found magic startup script at /home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.magicrc
+Install option: techlef
+--- sky130A_install.log head ---
+Starting SKY130 PDK migration on Thu Jul 30 05:14:05 UTC 2026

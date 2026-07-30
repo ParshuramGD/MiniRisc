@@ -1,0 +1,2 @@
+ADDI R1,R0,#5
+ADDI R2,R0,#1

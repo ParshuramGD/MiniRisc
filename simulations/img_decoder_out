@@ -1,0 +1,85 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2009.vpi";
+S_0000011a475abd30 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0000011a475ad8b0 .scope module, "imm_decoder_tb" "imm_decoder_tb" 3 1;
+ .timescale 0 0;
+P_0000011a474a89b0 .param/l "INST_WIDTH" 0 3 4, +C4<00000000000000000000000000010000>;
+v0000011a475adbd0_0 .net "funct", 2 0, L_0000011a47507620;  1 drivers
+v0000011a475adc70_0 .var "instruction", 15 0;
+v0000011a474b4a90_0 .net "opcode", 3 0, L_0000011a47507260;  1 drivers
+v0000011a474b4b30_0 .net "rd", 2 0, L_0000011a475078a0;  1 drivers
+v0000011a474b4bd0_0 .net "rs1", 2 0, L_0000011a47507c60;  1 drivers
+v0000011a474b4c70_0 .net "rs2", 2 0, L_0000011a47507a80;  1 drivers
+S_0000011a475ada40 .scope module, "dut" "imm_decoder" 3 15, 4 13 0, S_0000011a475ad8b0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "instruction";
+    .port_info 1 /OUTPUT 4 "opcode";
+    .port_info 2 /OUTPUT 3 "rd";
+    .port_info 3 /OUTPUT 3 "rs1";
+    .port_info 4 /OUTPUT 3 "rs2";
+    .port_info 5 /OUTPUT 3 "funct";
+P_0000011a474a91b0 .param/l "INST_WIDTH" 0 4 13, +C4<00000000000000000000000000010000>;
+v0000011a475a6d20_0 .net "funct", 2 0, L_0000011a47507620;  alias, 1 drivers
+v0000011a475abec0_0 .net "instruction", 15 0, v0000011a475adc70_0;  1 drivers
+v0000011a475ab640_0 .net "opcode", 3 0, L_0000011a47507260;  alias, 1 drivers
+v0000011a475ab480_0 .net "rd", 2 0, L_0000011a475078a0;  alias, 1 drivers
+v0000011a475ab2c0_0 .net "rs1", 2 0, L_0000011a47507c60;  alias, 1 drivers
+v0000011a475ab100_0 .net "rs2", 2 0, L_0000011a47507a80;  alias, 1 drivers
+L_0000011a47507260 .part v0000011a475adc70_0, 12, 4;
+L_0000011a475078a0 .part v0000011a475adc70_0, 9, 3;
+L_0000011a47507c60 .part v0000011a475adc70_0, 6, 3;
+L_0000011a47507a80 .part v0000011a475adc70_0, 3, 3;
+L_0000011a47507620 .part v0000011a475adc70_0, 0, 3;
+    .scope S_0000011a475ad8b0;
+T_0 ;
+    %delay 1, 0;
+    %vpi_call/w 3 24 "$monitor", $time, "instruction = %16b , opcode = %4b , rd = %3b , rs1 = %3b , rs2 = %3b , funct = %3b ", v0000011a475adc70_0, v0000011a474b4a90_0, v0000011a474b4b30_0, v0000011a474b4bd0_0, v0000011a474b4c70_0, v0000011a475adbd0_0 {0 0 0};
+    %pushi/vec4 173, 0, 16;
+    %store/vec4 v0000011a475adc70_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 173, 0, 16;
+    %store/vec4 v0000011a475adc70_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 141, 0, 16;
+    %store/vec4 v0000011a475adc70_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 4369, 0, 16;
+    %store/vec4 v0000011a475adc70_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 65535, 0, 16;
+    %store/vec4 v0000011a475adc70_0, 0, 16;
+    %pushi/vec4 32768, 0, 16;
+    %store/vec4 v0000011a475adc70_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 32770, 0, 16;
+    %store/vec4 v0000011a475adc70_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 16;
+    %store/vec4 v0000011a475adc70_0, 0, 16;
+    %delay 10, 0;
+    %end;
+    .thread T_0;
+    .scope S_0000011a475ad8b0;
+T_1 ;
+    %vpi_call/w 3 59 "$dumpfile", "imm_decoder_tb.vcd" {0 0 0};
+    %vpi_call/w 3 60 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000011a475ad8b0 {0 0 0};
+    %delay 100, 0;
+    %vpi_call/w 3 64 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "tb/imm_decoder_tb.sv";
+    "rtl/imm_decoder.sv";

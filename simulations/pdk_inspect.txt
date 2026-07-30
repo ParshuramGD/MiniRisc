@@ -1,0 +1,244 @@
+--- top-level Makefile lines 1-160 ---
+# Makefile for efabless design kits for SkyWater Sky130:
+#
+#  sky130A      =  5-metal backend stack with dual MiM
+#  sky130B      =  5-metal backend stack with dual MiM and ReRAM
+#
+# Written by Tim Edwards March 2019
+# efabless corporation
+# updated October 2019
+# updated December 2019 (divide installation sections for individual tools)
+# updated March 2020 (refactored the install process)
+# updated May 2020 (changed to new process name Sky130)
+# updated January 2022 (divided into two variants A and B)
+# updated July 2023 (sky130 repositories switched to github/efabless)
+#
+# Instructions:
+#
+# Run "configure" from the top level directory.  Use the following
+# configuration options to match your environment:
+#
+#	--enable-sky130-pdk
+#		If enabled, install the skywater PDK.
+#		If explicitly disabled, sky130 is skipped over entirely.
+#
+#	--with-sky130-link-targets=<value>
+#		where <value> is one of "none" or "source".  If set to "source",
+#		then where possible, the installed files are symbolic links
+#		back to the source, rather than copies of the source.  The
+#		default value is "none" if the option is not specified.
+#
+#	--with-ef-style
+#		If specified, then the installation uses the efabless style,
+#		which swaps the file hierarchy of file formats vs. IP libraries;
+#		e.g., "gds/sky130_fd_sc_hd/" with ef-style, vs.
+#		"sky130_fd_sc_hd/gds/" without it.  Normally this should not
+#		be enabled.
+#
+# Enable/disable for specific libraries to be installed (and downloaded if
+# needed).  Libraries that are part of the open_pdks repository are enabled
+# by default and must be disabled by passing an option to configure.  Libraries
+# that are not part of the open_pdks repository are disabled by default and
+# must be enabled by passing an option to configure.
+#
+# Internal libraries and tool setups that can be disabled are the following:
+#
+#	--disable-magic
+#		Do not install setup files for the magic layout tool.
+#
+#	--disable-netgen
+#		Do not install setup files for the netgen LVS tool.
+#
+#	--disable-irsim
+#		Do not install setup files for the IRSIM simulation tool.
+#
+#	--disable-qflow
+#		Do not install setup files for the qflow synthesis flow.
+#
+#	--disable-librelane
+#		Do not install setup files for the librelane sythesis flow.
+#
+#	--disable-klayout
+#		Do not install setup files for the klayout layout tool.
+#
+#
+# NOTE:  The comments below are for features that have not yet been
+# implemented.
+#
+# External (third-party) libraries and tool setups are the following (enabled
+# by default):
+#
+#	--enable-primitive-sky130[=<path>]
+#		If enabled, install the sky130 primitives library.
+#		If <path> is not specified, then the primitives library will be
+#		cloned from the git repository and installed.
+#
+#	--enable-io-sky130[=<path>]
+#		If enabled, install the sky130 I/O library.
+#		If <path> is not specified, then the I/O library will be
+#		cloned from the git repository and installed.
+#
+#	--enable-sc-hs-sky130[=<path>]
+#		If enabled, install the sky130 high-speed standard cell library.
+#		If <path> is not specified, then the high-speed standard cell
+#		library will be cloned from the git repository and installed.
+#
+#	--enable-sc-ms-sky130[=<path>]
+#		If enabled, install the sky130 medium-speed standard cell library.
+#		If <path> is not specified, then the medium-speed standard cell
+#		library will be cloned from the git repository and installed.
+#
+#	--enable-sc-ls-sky130[=<path>]
+#		If enabled, install the sky130 low-speed standard cell library.
+#		If <path> is not specified, then the low-speed standard cell
+#		library will be cloned from the git repository and installed.
+#
+#	--enable-sc-lp-sky130[=<path>]
+#		If enabled, install the sky130 low-power standard cell library.
+#		If <path> is not specified, then the low-power standard cell
+#		library will be cloned from the git repository and installed.
+#
+#	--enable-sc-hd-sky130[=<path>]
+#		If enabled, install the sky130 high-density standard cell library.
+#		If <path> is not specified, then the high-density standard cell
+#		library will be cloned from the git repository and installed.
+#
+#	--enable-sc-hdll-sky130[=<path>]
+#		If enabled, install the sky130 high-density low-leakage standard
+#		cell library.  If <path> is not specified, then the high-density
+#		low-leakage standard cell library will be cloned from the git
+#		repository and installed.
+#
+#	--enable-sc-hvl-sky130[=<path>]
+#		If enabled, install the sky130 high-voltage standard cell library.
+#		If <path> is not specified, then the high-voltage standard cell
+#		library will be cloned from the git repository and installed.
+#
+#	--enable-alpha-sky130[=<path>]
+#		If enabled, install the sky130_ml_xx_hd font library from
+#		Paul Schulz on github.  If <path> is not specified, then the
+#		font library will be cloned from the git repository and
+#		installed.
+#
+#	--enable-xschem-sky130[=<path>]
+#		If enabled, install the Sky130 setup for the xschem schematic
+#		editor.  If <path> is specified, then the xschem setup is
+#		expected to be found rooted at the given path.  If not
+#		specified, then the xschem setup will be cloned from the
+#		repository and installed.
+#
+#	--enable-klayout-sky130[=<path>]
+#		If enabled, install the Sky130 setup for the klayout layout
+#		editor.  If <path> is specified, then the klayout setup is
+#		expected to be found rooted at the given path.  If not
+#		specified, then the klayout setup will be cloned from the
+#		repository and installed.
+#
+# External (third-party) libraries and tool setups are the following (disabled
+# by default):
+#
+#	--enable-sram-sky130[=<path>]
+#		If enabled, install the sky130_sram_macros library from
+#		efabless on github.   If <path> is not specified, then
+#		the SRAM library will be cloned from the repository and
+#		installed.
+#
+#	--enable-sram-space-sky130[=<path>]
+#		If enabled, install the sky130_fd_bd_sram library from
+#		google on github.   If <path> is not specified, then the
+#		library will be cloned from the repository and installed.
+#
+#	--enable-osu-t12-sky130[=<path>]
+#		If enabled, install the sky130_osu_sc_t12 libraries from
+#		foss-eda-tools on googlesource.   If <path> is not
+#		specified, then the OSU standard cell library will be
+#		clones from the repository and installed.
+#
+#	--enable-osu-t15-sky130[=<path>]
+#		If enabled, install the sky130_osu_sc_t15 libraries from
+#		foss-eda-tools on googlesource.   If <path> is not
+#		specified, then the OSU standard cell library will be
+#		clones from the repository and installed.
+--- sky130A_make.log tail ---
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 5976: section extract:
+	Ambiguous layer (type) name "error"
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 5979: section extract:
+	Unrecognized layer (type) name "a1>0.45"
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 5981: section extract:
+	Unrecognized layer (type) name "a1>11.55"
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 5984: section extract:
+	Unrecognized layer (type) name "a1>0.99"
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 5984: section extract:
+	Ambiguous layer (type) name "error"
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 6034: section extract:
+	Malformed line for keyword device.  Correct usage:
+	device device dev-type types options...
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 6036: section extract:
+	Malformed line for keyword device.  Correct usage:
+	device device dev-type types options...
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 6038: section extract:
+	Malformed line for keyword device.  Correct usage:
+	device device dev-type types options...
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 6040: section extract:
+	Malformed line for keyword device.  Correct usage:
+	device device dev-type types options...
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 6042: section extract:
+	Malformed line for keyword device.  Correct usage:
+	device device dev-type types options...
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 6046: section extract:
+	Malformed line for keyword device.  Correct usage:
+	device device dev-type types options...
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 6048: section extract:
+	Malformed line for keyword device.  Correct usage:
+	device device dev-type types options...
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 6050: section extract:
+	Malformed line for keyword device.  Correct usage:
+	device device dev-type types options...
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 6052: section extract:
+	Malformed line for keyword device.  Correct usage:
+	device device dev-type types options...
+/home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech: line 6054: section extract:
+	Malformed line for keyword device.  Correct usage:
+	device device dev-type types options...
+The following sections of /home/hp/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech contained errors:
+    version
+Traceback (most recent call last):
+  File "/home/hp/open_pdks/sky130/../common/foundry_install.py", line 1818, in <module>
+    subprocess_run(
+  File "/home/hp/open_pdks/sky130/../common/foundry_install.py", line 290, in subprocess_run
+    raise SystemError("".join(emsg))
+SystemError: Command magic failed with exit code: -11
+  magic -dnull -noconsole
+Input script was:
+---------------------------------------------------------------------------
+#!/usr/bin/env wish
+#--------------------------------------------
+# Script to generate .mag files from .gds    
+#--------------------------------------------
+crashbackups stop
+drc off
+locking off
+gds readonly true
+gds drccheck false
+gds flatten true
+gds rescale false
+tech unlock *
+cif istyle sky130()
+set devlist {sky130_fd_pr__rf_npn_05v5_W1p00L1p00 sky130_fd_pr__rf_npn_05v5_W1p00L2p00 sky130_fd_pr__rf_pnp_05v5_W0p68L0p68 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 sky130_fd_pr__rf_npn_11v0_W1p00L1p00 sky130_fd_pr__rf_test_coil1 sky130_fd_pr__rf_test_coil2 sky130_fd_pr__rf_test_coil3 sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5 sky130_fd_pr__cap_vpp_11p5x11p7_m1m2_noshield sky130_fd_pr__cap_vpp_08p6x07p8_m1m2_shieldl1 sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1}
+set topcell [lindex [cellname list top] 0]
+foreach cellname $devlist {
+    load $cellname
+    property gencell $cellname
+    property parameter m=1
+    property library sky130
+}
+load $topcell
+puts stdout "Writing all magic database files"
+writeall force
+puts stdout "Done."
+quit -noprompt
+
+---------------------------------------------------------------------------
+
+--- sky130A_install.log tail ---
+Starting SKY130 PDK migration on Thu Jul 30 05:14:05 UTC 2026

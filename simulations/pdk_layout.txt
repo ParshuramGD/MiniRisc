@@ -1,0 +1,93 @@
+ls sky130A libs.ref:
+total 40
+drwxr-xr-x  9 hp hp 4096 Jul 30 04:59 sky130_fd_io
+drwxr-xr-x  6 hp hp 4096 Jul 30 05:03 sky130_fd_pr
+drwxr-xr-x  6 hp hp 4096 Jul 30 04:59 sky130_fd_sc_hd
+drwxr-xr-x 11 hp hp 4096 Jul 30 05:02 sky130_fd_sc_hdll
+drwxr-xr-x 11 hp hp 4096 Jul 30 05:02 sky130_fd_sc_hs
+drwxr-xr-x  4 hp hp 4096 Jul 30 04:59 sky130_fd_sc_hvl
+drwxr-xr-x 11 hp hp 4096 Jul 30 05:03 sky130_fd_sc_lp
+drwxr-xr-x 11 hp hp 4096 Jul 30 05:02 sky130_fd_sc_ls
+drwxr-xr-x 11 hp hp 4096 Jul 30 05:02 sky130_fd_sc_ms
+drwxr-xr-x  4 hp hp 4096 Jul 30 04:59 sky130_ml_xx_hd
+find tree:
+/home/hp/open_pdks/sky130/sky130A/libs.ref
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/cdl
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/cdl/sky130_ef_io.cdl
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/cdl/sources.txt
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/gds
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/gds/sky130_ef_io.gds
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/gds/sky130_ef_io__analog.gds
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/gds/sky130_ef_io__bare_pad.gds
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/gds/sky130_ef_io__connect_vcchib_vccd_and_vswitch_vddio_slice_20um.gds
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/gds/sky130_ef_io__connect_vdda_vddio_and_vssa_vssio_slice_20um.gds
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/gds/sky130_ef_io__disconnect_vccd_slice_5um.gds
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/gds/sky130_ef_io__disconnect_vdda_slice_5um.gds
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/gds/sky130_ef_io__gpiov2_pad_wrapped.gds
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/gds/sources.txt
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_ef_io.lef
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io__top_gpiov2.lef
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io__top_power_hvc_wpadv2.lef
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io__top_xres4v2.lef
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sources.txt
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__analog_stubs.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ff_ff_100C_1v95_5v50.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ff_ff_n40C_1v95_5v50.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ff_ff_n40C_1v95_5v50_nointpwr.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ff_ss_100C_1v65_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ff_ss_100C_1v95_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ff_ss_100C_1v95_1v95.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ff_ss_n40C_1v65_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ff_ss_n40C_1v95_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ff_ss_n40C_1v95_1v95.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ss_ff_100C_1v40_5v50.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ss_ff_100C_1v60_5v50.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ss_ff_n40C_1v35_5v50.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ss_ff_n40C_1v60_5v50.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ss_ss_100C_1v40_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ss_ss_100C_1v60_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ss_ss_100C_1v60_3v00.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ss_ss_n40C_1v35_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ss_ss_n40C_1v40_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ss_ss_n40C_1v60_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_ss_ss_n40C_1v60_1v65_nointpwr.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ff_100C_1v95_5v50.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50_nointpwr.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ss_100C_1v65_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ss_100C_1v95_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ss_100C_1v95_1v95.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ss_n40C_1v65_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ss_n40C_1v95_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ss_n40C_1v95_1v95.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ff_100C_1v40_5v50.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ff_100C_1v60_5v50.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ff_n40C_1v35_5v50.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ff_n40C_1v60_5v50.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v40_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_n40C_1v35_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_n40C_1v40_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_n40C_1v60_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_n40C_1v60_1v65_nointpwr.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_tt_tt_025C_1v80_3v30.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_100C_1v95_5v50_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_100C_1v95_5v50_5v50.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_n40C_1v95_5v50_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_n40C_1v95_5v50_5v50.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_ss_100C_1v65_1v65_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_ss_100C_1v95_1v95_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_ss_100C_1v95_1v95_1v95.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_ss_100C_1v95_5v50_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_ss_n40C_1v65_1v65_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_ss_n40C_1v95_1v95_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_ss_n40C_1v95_1v95_1v95.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_ss_n40C_1v95_5v50_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ss_100C_1v40_1v65_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ss_100C_1v60_1v65_1v65.lib
+/home/hp/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ss_100C_1v60_3v00_3v00.lib
