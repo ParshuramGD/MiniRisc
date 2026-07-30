@@ -1,0 +1,132 @@
+$date
+	Thu Jul 09 10:17:28 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module reg_tb $end
+$scope module dut $end
+$var wire 1 ! clk $end
+$var wire 3 " rd_addr [2:0] $end
+$var wire 8 # rd_data [7:0] $end
+$var wire 1 $ reg_write $end
+$var wire 3 % rs1_addr [2:0] $end
+$var wire 3 & rs2_addr [2:0] $end
+$var wire 1 ' rst $end
+$var wire 8 ( rs2_data [7:0] $end
+$var wire 8 ) rs1_data [7:0] $end
+$var parameter 32 * Reg_Depth $end
+$var parameter 32 + reg_Width $end
+$var integer 32 , i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 +
+b1000 *
+$end
+#0
+$dumpvars
+bx ,
+b0 )
+b0 (
+1'
+b0 &
+b0 %
+0$
+bx #
+bx "
+0!
+$end
+#5
+b1000 ,
+1!
+#10
+b1100 #
+b100 "
+1$
+0!
+0'
+#15
+1!
+#16
+b0 #
+b0 "
+0$
+#20
+b110101 #
+b110 "
+1$
+0!
+#25
+1!
+#26
+b0 #
+b0 "
+0$
+#30
+b10111 #
+b111 "
+1$
+0!
+#35
+1!
+#36
+b0 #
+b0 "
+0$
+#40
+b101100 #
+1$
+0!
+#45
+1!
+#46
+b0 #
+0$
+#50
+b10101 #
+b10 "
+1$
+0!
+#55
+1!
+#56
+b1100 )
+b100 %
+b0 #
+b0 "
+0$
+#57
+b110101 )
+b110 %
+#58
+b0 )
+b0 %
+#59
+b1100 )
+b100 %
+#60
+b110101 (
+b110 &
+0!
+#65
+1!
+#70
+0!
+#75
+1!
+#80
+0!
+#85
+1!
+#90
+0!
+#95
+1!
+#100
+0!

@@ -1,0 +1,63 @@
+$date
+	Wed Jul 08 09:46:25 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module inst_tb $end
+$var wire 16 ! instruction [15:0] $end
+$var parameter 32 " inst_width $end
+$var parameter 32 # pc_width $end
+$var parameter 32 $ word $end
+$var reg 8 % pc [7:0] $end
+$var integer 32 & i [31:0] $end
+$scope module dut $end
+$var wire 16 ' instruction [15:0] $end
+$var wire 8 ( pc [7:0] $end
+$var parameter 32 ) inst_width $end
+$var parameter 32 * pc_width $end
+$var parameter 32 + word $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100000000 +
+b1000 *
+b10000 )
+b100000000 $
+b1000 #
+b10000 "
+$end
+#0
+$dumpvars
+bx (
+bx '
+b100000000 &
+bx %
+bx !
+$end
+#10
+b1 !
+b1 '
+b1 %
+b1 (
+#20
+b10 !
+b10 '
+b10 %
+b10 (
+#30
+b11 !
+b11 '
+b11 %
+b11 (
+#40
+b100 !
+b100 '
+b100 %
+b100 (
+#100

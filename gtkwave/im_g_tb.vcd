@@ -1,0 +1,92 @@
+$date
+	Fri Jul 10 18:22:44 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module im_g_tb $end
+$var wire 8 ! immediate [7:0] $end
+$var parameter 32 " INST_WIDTH $end
+$var parameter 4 # OPCODE_ADDI $end
+$var parameter 4 $ OPCODE_LOAD $end
+$var parameter 4 % OPCODE_RTYPE $end
+$var parameter 4 & OPCODE_STORE $end
+$var parameter 32 ' Reg_Depth $end
+$var reg 16 ( instruction [15:0] $end
+$var reg 4 ) opcode [3:0] $end
+$scope module dut $end
+$var wire 16 * instruction [15:0] $end
+$var wire 4 + opcode [3:0] $end
+$var wire 8 , immediate [7:0] $end
+$var parameter 32 - INST_WIDTH $end
+$var parameter 4 . OPCODE_ADDI $end
+$var parameter 4 / OPCODE_LOAD $end
+$var parameter 4 0 OPCODE_RTYPE $end
+$var parameter 4 1 OPCODE_STORE $end
+$var parameter 32 2 Reg_Depth $end
+$upscope $end
+$scope task check_out $end
+$var reg 8 3 expected [7:0] $end
+$var reg 16 4 instruction [15:0] $end
+$var reg 4 5 op [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 2
+b11 1
+b0 0
+b10 /
+b1 .
+b10000 -
+b1000 '
+b11 &
+b0 %
+b10 $
+b1 #
+b10000 "
+$end
+#0
+$dumpvars
+bx 5
+bx 4
+bx 3
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+b0 !
+$end
+#10
+b11111001 !
+b11111001 ,
+b101110111001 (
+b101110111001 *
+#20
+b101110111001 (
+b101110111001 *
+b1 )
+b1 +
+#30
+b10 !
+b10 ,
+b1000000000000010 (
+b1000000000000010 *
+#40
+b100 )
+b100 +
+b1110000 3
+b101001101011101 4
+b100 5
+#50
+b1 )
+b1 +
+b111001 3
+b101110111001 4
+b1 5
+#100
