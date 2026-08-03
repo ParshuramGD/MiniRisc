@@ -119,7 +119,7 @@ The implementation stages include:
 The processor was developed using the following open-source toolchain.
 
 <p align="center">
-<img src="docs/diagrams/tools.png" width="650">
+<img src="docs/diagrams/rtl_toolchain.png" width="650">
 </p>
 
 <p align="center">
@@ -189,7 +189,7 @@ The waveform below shows instruction fetch, decode, ALU execution, memory access
 | Clock Tree Synthesis | ✅ Complete |
 | Routing | ✅ Complete |
 | GDSII Generation | ✅ Complete |
-| Documentation | 🚧 In Progress |
+| Documentation | ✅ Complete |
 
 ---
 
