@@ -35,7 +35,7 @@ The processor consists of the following hardware modules:
 - Write-Back Multiplexer
 
 <p align="center">
-<img src="docs/diagrams/pipeline_flow.png" width="650">
+<img src="docs/diagrams/mini_riscv_dataflow.png" width="650">
 </p>
 
 <p align="center">
