@@ -149,7 +149,7 @@ Verification included:
 The waveform below shows instruction fetch, decode, ALU execution, memory access, and register write-back during processor execution.
 
 <p align="center">
-<img src="docs/image/cpu_top.png" width="950">
+<img src="docs/images/cpu_top.png" width="950">
 </p>
 
 <p align="center">
