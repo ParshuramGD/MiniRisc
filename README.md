@@ -157,23 +157,64 @@ The waveform below shows instruction fetch, decode, ALU execution, memory access
 </p>
 
 ---
-
 # RTL-to-GDS Results
 
-| Metric | Value |
-|---------|------:|
-| Technology | SKY130 HD |
+The MiniRISC design was taken through synthesis, static timing analysis, physical
+implementation, routing, and GDSII generation using the SKY130 HD standard-cell
+library.
+
+| Metric                     | Value |
+| -------------------------- | ----: |
+| Technology                | SKY130 HD |
 | Synthesized Standard Cells | 135 |
-| Clock Constraint | 10 ns |
+| Clock Constraint           | 10 ns |
+| Worst Setup Slack          | +4.84 ns |
+| Worst Hold Slack           | +0.91 ns |
 | Worst Negative Slack (WNS) | 0 ns |
 | Total Negative Slack (TNS) | 0 ns |
-| Die Size | 95.32 × 95.32 μm |
-| Die Area | 9085.9 μm² |
-| Core Utilization | 26% |
-| Routing Overflow | 0 |
-| DRC Errors | 0 |
+| Die Size                   | 95.32 × 95.32 μm |
+| Die Area                   | 9085.9 μm² |
+| Core Utilization           | 26% |
+| Routing Overflow           | 0 |
+| DRC Errors                 | 0 |
+| Total Power                | 0.168 mW |
 
----
+### Timing
+
+The final STA report shows positive setup and hold slack under the reported
+slow timing corner:
+
+- **Worst setup slack:** +4.84 ns
+- **Worst hold slack:** +0.91 ns
+- **WNS:** 0 ns
+- **TNS:** 0 ns
+
+Positive setup and hold slack, together with zero WNS/TNS, indicate that no
+setup or hold timing violations were reported for the analyzed design.
+
+### Power
+
+The reported total power is approximately **0.168 mW** at the analyzed
+slow-power condition.
+
+| Power Component | Value |
+| ---------------- | ----: |
+| Sequential Power | 0.151 mW |
+| Combinational Power | 0.0169 mW |
+| Clock Power | 0 mW |
+| Macro Power | 0 mW |
+| Pad Power | 0 mW |
+| **Total Power** | **0.168 mW** |
+
+> **Note:** The reported power is the value from the STA/power analysis
+> artifact and should be treated as a tool-reported estimate for the analyzed
+> conditions, not as a silicon measurement.
+
+### Physical Implementation
+
+The final implementation produced a **95.32 × 95.32 μm** die with **26% core
+utilization**. Routing completed with zero reported routing overflow, and the
+final GDSII generation reported zero DRC errors.
 
 # Project Status
 
