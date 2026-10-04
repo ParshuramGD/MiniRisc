@@ -216,6 +216,30 @@ The final implementation produced a **95.32 × 95.32 μm** die with **26% core
 utilization**. Routing completed with zero reported routing overflow, and the
 final GDSII generation reported zero DRC errors.
 
+# Final GDS Layout
+
+The final physical implementation of MiniRISC is shown below. The generated GDSII layout was visualized in both 2D and 3D views.
+
+<p align="center">
+<img src="images/GDS_2d_view.png" width="850">
+</p>
+
+<p align="center">
+<b>Figure 5.</b> Final MiniRISC GDSII Layout — 2D View
+</p>
+
+<p align="center">
+<img src="images/GDS_3d_view.png" width="850">
+</p>
+
+<p align="center">
+<b>Figure 6.</b> Final MiniRISC GDSII Layout — 3D View
+</p>
+
+---
+
+# Project Status
+
 # Project Status
 
 | Stage | Status |
