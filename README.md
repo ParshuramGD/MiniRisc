@@ -221,7 +221,7 @@ final GDSII generation reported zero DRC errors.
 The final physical implementation of MiniRISC is shown below. The generated GDSII layout was visualized in both 2D and 3D views.
 
 <p align="center">
-<img src="images/GDS_2d_view.png" width="850">
+<img src="docs/images/GDS_2d_view.png" width="850">
 </p>
 
 <p align="center">
@@ -229,7 +229,7 @@ The final physical implementation of MiniRISC is shown below. The generated GDSI
 </p>
 
 <p align="center">
-<img src="images/GDS_3d_view.png" width="850">
+<img src="docs/images/GDS_3d_view.png" width="850">
 </p>
 
 <p align="center">
